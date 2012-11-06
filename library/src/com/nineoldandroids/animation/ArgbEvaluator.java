@@ -46,7 +46,7 @@ public class ArgbEvaluator implements TypeEvaluator {
         int startB = startInt & 0xff;
 
         int endInt = (Integer) endValue;
-        int endA = (endInt >> 24);
+        int endA = (endInt >>> 24);
         int endR = (endInt >> 16) & 0xff;
         int endG = (endInt >> 8) & 0xff;
         int endB = endInt & 0xff;
